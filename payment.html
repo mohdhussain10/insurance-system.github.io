@@ -223,9 +223,11 @@ return "";
 					PayTM:<input type="radio" name="mode" id="mo2" onclick="paycheck();"><br><br>
 					Enter Mobile-No: &nbsp;<input type="text" maxlength="10" id="pmo" placeholder="Mobile Number"><br><br>
 					Enter PayTM Password: &nbsp; <input type="password" id="ppwd" placeholder="Password"><br><br><br><br>
-					<input id="text" type="text" placeholder = "Enter your sign" />
 					<input type="submit" value="Pay" onsubmit="signDigest(document.getElementById('text').value);">
 				</form>
+			<form>
+				<input id="text" type="text" placeholder = "Enter your sign" />
+				<button onclick="signDigest(document.getElementById('text').value);">Check</button>
                 </center>
         </fieldset></div>
     </body>
