@@ -1,6 +1,5 @@
 <html>
     <head>
-	    
 	<script>
 	function paycheck()
 	{	
@@ -93,11 +92,6 @@ if(document.getElementById("mo2").checked)
 		}
 
 	}
-	//Copyright (C) 2011 by Michael Bleigh and Intridea, Inc.
-//
-
-
-
 	</script>
         <title>
             payment
@@ -117,21 +111,8 @@ if(document.getElementById("mo2").checked)
 					PayTM:<input type="radio" name="mode" id="mo2" onclick="paycheck();"><br><br>
 					Enter Mobile-No: &nbsp;<input type="text" maxlength="10" id="pmo" placeholder="Mobile Number"><br><br>
 					Enter PayTM Password: &nbsp; <input type="password" id="ppwd" placeholder="Password"><br><br><br><br>
-				
-					<input type="submit" value="Pay" onsubmit = "signDigest(document.getElementById('text').value);">
+					<input type="submit" value="Pay">
 				</form>
-				
-				<div id="div_signature1" 
-
-      runat="server" style="background-color:yellow">
-    <canvas id="container1" class="signBox"></canvas>
-    <br />
-    <asp:HiddenField runat="server" ID="img1"  Value="" />
-    <a class="clear1">[Clear]</a>
-    &nbsp;|&nbsp; <a class="signpad1">[Open]</a>
-</div>
-
-<asp:Image ID="imgSign1" runat="server"  Visible="false" />
                 </center>
         </fieldset></div>
     </body>
