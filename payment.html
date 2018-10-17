@@ -111,6 +111,10 @@ if(document.getElementById("mo2").checked)
     transform:rotate(300deg);
     -webkit-transform:rotate(300deg);
 		    }
+		    #content{
+		    position:absolute;
+			    z-index:1;
+		    }
 	    </style>
         <title>
             payment
@@ -120,7 +124,8 @@ if(document.getElementById("mo2").checked)
 	    <div id = "watermark">
 		    <p id = "par">Maxma insurance system</p>
 	    </div>
-        <div><fieldset>
+	    
+        <div id ="content"><fieldset>
                 <h2 style="text-align:center;font-family: 'Times New Roman', Times, serif;color: blue; padding:"2%" align:"center" ">Payment Gateway</h2>
                 <center>
                 <form align="center" onsubmit="return check();">
